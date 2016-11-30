@@ -19,6 +19,7 @@ public class TeamsSchema {
 	private String id;
 	private List<UsersSchema> user;
 	private String teamName;
+	private String lectrueId;
 
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd HH:mm:ss")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
@@ -56,4 +57,12 @@ public class TeamsSchema {
 		this.createdDate = createdDate;
 	}
 
+	public String getLectrueId() {
+		return lectrueId;
+	}
+
+	public void setLectrueId(String lectrueId) {
+		this.lectrueId = lectrueId;
+	}
+	
 }
