@@ -21,23 +21,24 @@ public class LecturesSchema {
 	@Id
 	private String id;
 	private String lectureName;
-	
+	private String lectureContent;
+
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date startDate;
-	
+
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date endDate;
-	
-	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm:ss")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
+
+	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
 	private Date startTime;
-	
-	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm:ss")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
+
+	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
 	private Date endTime;
-	
+
 	private List<UsersSchema> user;
 	private InstructorsSchema instructor;
 	private AdminsSchema admin;
@@ -57,6 +58,14 @@ public class LecturesSchema {
 
 	public void setLectureName(String lectureName) {
 		this.lectureName = lectureName;
+	}
+
+	public String getLectureContent() {
+		return lectureContent;
+	}
+
+	public void setLectureContent(String lectureContent) {
+		this.lectureContent = lectureContent;
 	}
 
 	public Date getStartDate() {
