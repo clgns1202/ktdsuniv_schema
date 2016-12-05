@@ -18,10 +18,14 @@
 		</attributes>
 	</classpathentry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_101">
 =======
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 >>>>>>> ae2c507835aefd00bee7228ce850d3f8bb1d6daf
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_101">
+>>>>>>> d626e6a910d6b2535116cfdcde95d41096732866
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
