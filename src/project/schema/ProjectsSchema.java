@@ -11,6 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lecture.schema.LecturesSchema;
+import user.schema.UsersSchema;
 
 @Document(collection = "projects")
 public class ProjectsSchema {
@@ -20,6 +21,16 @@ public class ProjectsSchema {
 
 	private TeamsSchema team;
 	private LecturesSchema lecture;
+	private UsersSchema user;
+	
+	public UsersSchema getUser() {
+		return user;
+	}
+
+	public void setUser(UsersSchema user) {
+		this.user = user;
+	}
+
 	private List<ProjectWorksSchema> projectWorks;
 
 	private String projectName;
