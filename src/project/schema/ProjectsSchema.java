@@ -11,6 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lecture.schema.LecturesSchema;
+import user.schema.UsersSchema;
 
 @Document(collection = "projects")
 public class ProjectsSchema {
@@ -24,6 +25,7 @@ public class ProjectsSchema {
 
 	private String projectName;
 	private String projectInfo;
+	private UsersSchema user;
 
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -121,5 +123,14 @@ public class ProjectsSchema {
 	public void setModifiedDate(Date modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
+
+	public UsersSchema getUser() {
+		return user;
+	}
+
+	public void setUser(UsersSchema user) {
+		this.user = user;
+	}
+	
 
 }
