@@ -1,6 +1,7 @@
 package user.schema;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,6 +9,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import grades.schema.TestsSchema;
 
 @Document(collection="users")
 public class UsersSchema {
@@ -36,6 +39,16 @@ public class UsersSchema {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date modifiedDate;
 	
+	private List<TestsSchema> tests;
+	
+	public List<TestsSchema> getTests() {
+		return tests;
+	}
+
+	public void setTests(List<TestsSchema> tests) {
+		this.tests = tests;
+	}
+
 	public String getId() {
 		return id;
 	}
