@@ -35,6 +35,15 @@ public class ProjectsSchema {
 
 	private String projectName;
 	private String projectInfo;
+	private String teamBoss;
+
+	public String getTeamBoss() {
+		return teamBoss;
+	}
+
+	public void setTeamBoss(String teamBoss) {
+		this.teamBoss = teamBoss;
+	}
 
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
