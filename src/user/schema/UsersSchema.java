@@ -18,8 +18,8 @@ public class UsersSchema {
 	@Id
 	private String id;
 	
-	private String userId;
 	private String userPassword;
+	private String userId;
 	private String userSalt;
 	private String userName;
 	

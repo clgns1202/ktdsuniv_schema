@@ -18,10 +18,14 @@ public class BoardsSchema {
 
 	@Id
 	private String id;
-
+	
 	private String subject;
 	private String content;
-
+	
+	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+	private Date dailyDate;
+	
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd HH:mm:ss")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date createdDate;
@@ -60,6 +64,16 @@ public class BoardsSchema {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+	
+	
+
+	public Date getDailyDate() {
+		return dailyDate;
+	}
+
+	public void setDailyDate(Date dailyDate) {
+		this.dailyDate = dailyDate;
 	}
 
 	public Date getCreatedDate() {

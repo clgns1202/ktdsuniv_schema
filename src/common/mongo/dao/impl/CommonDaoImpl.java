@@ -74,8 +74,13 @@ public class CommonDaoImpl extends MongoTemplateSupport implements CommonDao{
 	
 		if(search.getSearchKeyName() != null && search.getSearchKeyName().length() > 0){
 			if(search.getSearchKeyword() != null && search.getSearchKeyword().length() > 0){
-				criteria = new Criteria(search.getSearchKeyName());			
-				criteria.regex(search.getSearchKeyword());
+				criteria = new Criteria(search.getSearchKeyName());
+				
+				if(search.isIdType()){
+					criteria.is(search.getSearchKeyword());
+				}else{					
+					criteria.regex(search.getSearchKeyword());
+				}
 			}
 		
 		}
