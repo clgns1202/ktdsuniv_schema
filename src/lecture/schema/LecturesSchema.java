@@ -56,14 +56,6 @@ public class LecturesSchema {
 		return lectureName;
 	}
 
-	public String getLectureContent() {
-		return lectureContent;
-	}
-
-	public void setLectureContent(String lectureContent) {
-		this.lectureContent = lectureContent;
-	}
-
 	public void setLectureName(String lectureName) {
 		this.lectureName = lectureName;
 	}

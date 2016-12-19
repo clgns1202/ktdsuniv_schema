@@ -17,15 +17,9 @@
 			<attribute name="owner.project.facets" value="jst.utility"/>
 		</attributes>
 	</classpathentry>
-<<<<<<< HEAD
+
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_101">
-=======
-<<<<<<< HEAD
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_101">
-=======
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
->>>>>>> fbe4550b8bef0f8c194dfc47dc16f974fc1a87a1
->>>>>>> 919d7a84c77e4ee99d8ad9633e2d0523530413b2
+
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
