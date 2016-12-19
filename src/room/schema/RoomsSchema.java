@@ -12,6 +12,7 @@ public class RoomsSchema {
 	private String id;
 	private String roomNumber;
 	private List<Seats> seat;
+	private int seatCount;
 
 	public String getId() {
 		return id;
@@ -36,5 +37,17 @@ public class RoomsSchema {
 	public void setSeat(List<Seats> seat) {
 		this.seat = seat;
 	}
+
+	public int getSeatCount() {
+		return seatCount;
+	}
+
+	public void setSeatCount(int seatCount) {
+		this.seatCount = seatCount;
+	}
+
+
+	
+	
 
 }
