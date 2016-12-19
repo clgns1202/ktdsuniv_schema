@@ -31,12 +31,12 @@ public class LecturesSchema {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date endDate;
 
-	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm:ss")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
+	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
 	private Date startTime;
 
-	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm:ss")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
+	@DateTimeFormat(iso = ISO.NONE, pattern = "HH:mm")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
 	private Date endTime;
 
 	private List<UsersSchema> user;
