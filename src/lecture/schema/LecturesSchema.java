@@ -21,6 +21,7 @@ public class LecturesSchema {
 	@Id
 	private String id;
 	private String lectureName;
+	private String lectureContent;
 	
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -57,6 +58,14 @@ public class LecturesSchema {
 
 	public void setLectureName(String lectureName) {
 		this.lectureName = lectureName;
+	}
+
+	public String getLectureContent() {
+		return lectureContent;
+	}
+
+	public void setLectureContent(String lectureContent) {
+		this.lectureContent = lectureContent;
 	}
 
 	public Date getStartDate() {
