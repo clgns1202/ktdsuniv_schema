@@ -14,6 +14,16 @@ public class SearchVO {
 
 	private Date startDate;
 	private Date endDate;
+	
+	private boolean idType = false;
+
+	public boolean isIdType() {
+		return idType;
+	}
+
+	public void setIdType(boolean idType) {
+		this.idType = idType;
+	}
 
 	public int getPageNumber() {
 		return pageNumber;
