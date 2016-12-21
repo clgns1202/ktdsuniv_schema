@@ -2,7 +2,7 @@ package room.schema;
 
 public class Seats {
 
-	private String seatNumber;
+	private int seatNumber;
 	private boolean isComputer;
 	private boolean isMouse;
 	private boolean isMonitor;
@@ -10,11 +10,13 @@ public class Seats {
 	private boolean isDesk;
 	private boolean isKeyboard;
 
-	public String getSeatNumber() {
+	
+
+	public int getSeatNumber() {
 		return seatNumber;
 	}
 
-	public void setSeatNumber(String seatNumber) {
+	public void setSeatNumber(int seatNumber) {
 		this.seatNumber = seatNumber;
 	}
 
