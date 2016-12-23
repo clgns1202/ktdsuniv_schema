@@ -43,6 +43,36 @@ public class LecturesSchema {
 	private InstructorsSchema instructor;
 	private AdminsSchema admin;
 	private RoomsSchema room;
+	
+	private String beaconId;
+	private int beaconMajor;
+	private int beaconMinor;
+	
+	
+
+	public String getBeaconId() {
+		return beaconId;
+	}
+
+	public void setBeaconId(String beaconId) {
+		this.beaconId = beaconId;
+	}
+
+	public int getBeaconMajor() {
+		return beaconMajor;
+	}
+
+	public void setBeaconMajor(int beaconMajor) {
+		this.beaconMajor = beaconMajor;
+	}
+
+	public int getBeaconMinor() {
+		return beaconMinor;
+	}
+
+	public void setBeaconMinor(int beaconMinor) {
+		this.beaconMinor = beaconMinor;
+	}
 
 	public String getId() {
 		return id;
