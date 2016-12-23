@@ -8,18 +8,25 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lecture.schema.LecturesSchema;
 import user.schema.UsersSchema;
 
-@Document
+@Document(collection="attendances")
 public class AttendancesSchema {
 
 	@Id
 	private String id;
 	private Date dateTime;
-	private UsersSchema usersSchema;
-	private LecturesSchema lecturesSchema;
+	private String nowDate;
+	private String userId;
+	private String lectureId;
 	private String result;
 	private String cause;
 	
 	
+	public String getNowDate() {
+		return nowDate;
+	}
+	public void setNowDate(String nowDate) {
+		this.nowDate = nowDate;
+	}
 	public String getId() {
 		return id;
 	}
@@ -32,17 +39,17 @@ public class AttendancesSchema {
 	public void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
 	}
-	public UsersSchema getUsersSchema() {
-		return usersSchema;
+	public String getUserId() {
+		return userId;
 	}
-	public void setUsersSchema(UsersSchema usersSchema) {
-		this.usersSchema = usersSchema;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public LecturesSchema getLecturesSchema() {
-		return lecturesSchema;
+	public String getLectureId() {
+		return lectureId;
 	}
-	public void setLecturesSchema(LecturesSchema lecturesSchema) {
-		this.lecturesSchema = lecturesSchema;
+	public void setLectureId(String lectureId) {
+		this.lectureId = lectureId;
 	}
 	public String getResult() {
 		return result;
