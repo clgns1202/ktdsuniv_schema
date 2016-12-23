@@ -23,8 +23,8 @@ public class UsersSchema {
 	private String userSalt;
 	private String userName;
 	
-	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+	@DateTimeFormat(iso = ISO.NONE, pattern = "yyMMdd")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyMMdd")
 	private Date birthday;
 	
 	private int gender;
