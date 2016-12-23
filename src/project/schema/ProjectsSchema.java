@@ -21,11 +21,29 @@ public class ProjectsSchema {
 
 	private TeamsSchema team;
 	private LecturesSchema lecture;
+	private UsersSchema user;
+	
+	public UsersSchema getUser() {
+		return user;
+	}
+
+	public void setUser(UsersSchema user) {
+		this.user = user;
+	}
+
 	private List<ProjectWorksSchema> projectWorks;
 
 	private String projectName;
 	private String projectInfo;
-	private UsersSchema user;
+	private String teamBoss;
+
+	public String getTeamBoss() {
+		return teamBoss;
+	}
+
+	public void setTeamBoss(String teamBoss) {
+		this.teamBoss = teamBoss;
+	}
 
 	@DateTimeFormat(iso = ISO.NONE, pattern = "yyyy-MM-dd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -124,13 +142,6 @@ public class ProjectsSchema {
 		this.modifiedDate = modifiedDate;
 	}
 
-	public UsersSchema getUser() {
-		return user;
-	}
-
-	public void setUser(UsersSchema user) {
-		this.user = user;
-	}
 	
 
 }
