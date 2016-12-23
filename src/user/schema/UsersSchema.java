@@ -23,9 +23,9 @@ public class UsersSchema {
 	private String userSalt;
 	private String userName;
 	
-	@DateTimeFormat(iso = ISO.NONE, pattern = "yyMMdd")
+	/*@DateTimeFormat(iso = ISO.NONE, pattern = "yyMMdd")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyMMdd")
-	private Date birthday;
+	private Date birthday;*/
 	
 	private int gender;
 	private String address;
@@ -89,13 +89,13 @@ public class UsersSchema {
 		this.userName = userName;
 	}
 
-	public Date getBirthday() {
+	/*public Date getBirthday() {
 		return birthday;
 	}
 
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
-	}
+	}*/
 
 	public int getGender() {
 		return gender;
